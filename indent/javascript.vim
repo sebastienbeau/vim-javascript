@@ -21,6 +21,11 @@ setlocal nosmartindent
 setlocal indentexpr=GetJavascriptIndent()
 setlocal indentkeys=0{,0},0),0],!^F,o,O,e
 
+"always expend tab
+setlocal expandtab
+setlocal shiftwidth=4
+setlocal softtabstop=4
+
 " Only define the function once.
 if exists("*GetJavascriptIndent")
   finish
